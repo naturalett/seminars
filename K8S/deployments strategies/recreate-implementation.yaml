@@ -19,7 +19,7 @@ spec:
         app: hello-world
     spec:
       containers:
-      - name: hello-Pod
+      - name: hello-pod
         image: supergiantkir/animals:moose
         ports:
         - containerPort: 8080
