@@ -10,9 +10,6 @@ spec:
   minReadySeconds: 10
   strategy:
     type: Recreate
-#    rollingUpdate:
-#      maxUnavailable: 1
-#      maxSurge: 1
   template:
     metadata:
       labels:
