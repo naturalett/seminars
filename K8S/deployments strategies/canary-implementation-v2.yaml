@@ -17,12 +17,10 @@ spec:
         track: canary
     spec: 
       containers: 
-        - 
+        - name: helloworld
           image: "supergiantkir/animals:moose"
-          name: helloworld
           ports: 
-            - 
-              containerPort: 80
+            - containerPort: 80
           resources: 
             limits: 
               cpu: 100m
