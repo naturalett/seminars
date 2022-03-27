@@ -4,6 +4,9 @@ kind: Deployment
 metadata: 
   name: helloworld-canary
 spec: 
+  selector:
+    matchLabels:
+      app: helloworld
   minReadySeconds: 5
   replicas: 1
   strategy: 
