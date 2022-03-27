@@ -3,6 +3,9 @@ kind: Deployment
 metadata:
   name: helloworld
 spec:
+  selector:
+    matchLabels:
+      app: helloworld
   replicas: 3
   strategy:
     rollingUpdate:
